@@ -1,0 +1,43 @@
+{
+  "name": "errorable-express-middleware",
+  "version": "0.0.1",
+  "description": "express middleware for errorable",
+  "homepage": "",
+  "author": {
+    "name": "calidion",
+    "email": "calidion@gmail.com",
+    "url": "blog.3gcnbeta.com"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "errorable",
+    "express",
+    "middleware"
+  ],
+  "repository": "Errorable/errorable-express",
+  "devDependencies": {
+    "errorable": "^0.1.3",
+    "errorable-common": "0.0.6",
+    "express": "^4.13.4",
+    "gulp": "^3.6.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "supertest": "^1.1.0"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.1.0"
+  }
+}
