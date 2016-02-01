@@ -40,11 +40,11 @@ express.get('/errorize', function errorizexx(req, res) {
 MIT © [calidion](blog.3gcnbeta.com)
 
 
-[npm-image]: https://badge.fury.io/js/errorable-express.svg
-[npm-url]: https://npmjs.org/package/errorable-express
-[travis-image]: https://travis-ci.org/Errorable/errorable-express.svg?branch=master
-[travis-url]: https://travis-ci.org/Errorable/errorable-express
-[daviddm-image]: https://david-dm.org/Errorable/errorable-express.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Errorable/errorable-express
-[coveralls-image]: https://coveralls.io/repos/Errorable/errorable-express/badge.svg
-[coveralls-url]: https://coveralls.io/r/Errorable/errorable-express
+[npm-image]: https://badge.fury.io/js/errorable-express-middleware.svg
+[npm-url]: https://npmjs.org/package/errorable-express-middleware
+[travis-image]: https://travis-ci.org/Errorable/express-middleware.svg?branch=master
+[travis-url]: https://travis-ci.org/Errorable/express-middleware
+[daviddm-image]: https://david-dm.org/Errorable/express-middleware.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/Errorable/express-middleware
+[coveralls-image]: https://coveralls.io/repos/Errorable/express-middleware/badge.svg
+[coveralls-url]: https://coveralls.io/r/Errorable/express-middleware
