@@ -47,8 +47,8 @@ express.get('/errorize', function errorizexx(req, res) {
 MIT © [calidion](blog.3gcnbeta.com)
 
 
-[npm-image]: https://badge.fury.io/js/errorable-express-middleware.svg
-[npm-url]: https://npmjs.org/package/errorable-express-middleware
+[npm-image]: https://badge.fury.io/js/errorable-express.svg
+[npm-url]: https://npmjs.org/package/errorable-express
 [travis-image]: https://travis-ci.org/Errorable/express-middleware.svg?branch=master
 [travis-url]: https://travis-ci.org/Errorable/express-middleware
 [daviddm-image]: https://david-dm.org/Errorable/express-middleware.svg?theme=shields.io
