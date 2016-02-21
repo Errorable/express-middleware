@@ -9,9 +9,9 @@ $ npm install --save errorable-express
 
 ## API
 
-1. res.errors
+1. res.errors  
     Keeps all errors defined, like res.errors.Success.
-2. res.errorize/res.restify
+2. res.errorize/res.restify  
     Generate the json object for the error and insert data if possible   
 
 ## Usage
