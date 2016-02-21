@@ -7,6 +7,13 @@
 $ npm install --save errorable-express
 ```
 
+## API
+
+1. res.errors
+    Keeps all errors defined, like res.errors.Success.
+2. res.errorize/res.restify
+    Generate the json object for the error and insert data if possible   
+
 ## Usage
 
 ```js
@@ -19,10 +26,10 @@ var errors = new Generator(common, 'zh-CN').errors;
 express.use(errorableExpress(errors));
 
 express.get('/', function indexxx(req, res) {
-  res.restify(errors.Success);
+  res.restify(res.errors.Success);
 });
 express.get('/message', function messagexx(req, res) {
-  res.restify(errors.Success, message);
+  res.restify(res.errors.Success, message);
 });
 
 express.get('/unknown', function unknownxx(req, res) {
