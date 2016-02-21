@@ -16,10 +16,10 @@ var message = 'Hello world';
 
 express.use(errorableExpress(errors));
 express.get('/', function indexxx(req, res) {
-  res.restify(errors.Success);
+  res.restify(res.errors.Success);
 });
 express.get('/message', function messagexx(req, res) {
-  res.restify(errors.Success, message);
+  res.restify(res.errors.Success, message);
 });
 
 express.get('/unknown', function unknownxx(req, res) {
