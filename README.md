@@ -16,6 +16,7 @@ $ npm install --save errorable-express
 
 ## Usage
 
+### Expressjs Middleware
 ```js
 var errorableExpress = require('errorable-express');
 var common = require('errorable-common');
@@ -42,6 +43,31 @@ express.get('/errorize', function errorizexx(req, res) {
 });
 
 ```
+
+### Integration with Sailsjs
+
+in config/http.js
+
+```js
+    //Create a new middleware function
+    errorable: function(req, res, next) {
+      var errorableExpress = require('errorable-express');   //the errorable middleware for express
+      var common = require('errorable-common');   //the errorable middleware for express
+      var errorable = require('errorable');	     //the errorable library
+      var Generator = errorable.Generator;	     //Get the generator
+      var errors = new Generator(common, 'zh-CN').errors;    //Generate the errors
+      var callback = errorableExpress(errors);
+      callback(req, res, next);
+    },
+    
+    //Added it to the order array
+    order: [
+    ...
+    'errorable',
+    ...
+    ]
+```
+
 ## License
 
 MIT © [calidion](blog.3gcnbeta.com)
