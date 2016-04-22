@@ -75,9 +75,9 @@ MIT © [calidion](blog.3gcnbeta.com)
 
 [npm-image]: https://badge.fury.io/js/errorable-express.svg
 [npm-url]: https://npmjs.org/package/errorable-express
-[travis-image]: https://travis-ci.org/Errorable/express-middleware.svg?branch=master
-[travis-url]: https://travis-ci.org/Errorable/express-middleware
-[daviddm-image]: https://david-dm.org/Errorable/express-middleware.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Errorable/express-middleware
-[coveralls-image]: https://coveralls.io/repos/Errorable/express-middleware/badge.svg
-[coveralls-url]: https://coveralls.io/r/Errorable/express-middleware
+[travis-image]: https://travis-ci.org/calidion/errorable-express.svg?branch=master
+[travis-url]: https://travis-ci.org/calidion/errorable-express
+[daviddm-image]: https://david-dm.org/calidion/errorable-express.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/calidion/errorable-express
+[coveralls-image]: https://coveralls.io/repos/calidion/errorable-express/badge.svg
+[coveralls-url]: https://coveralls.io/r/calidion/errorable-express
