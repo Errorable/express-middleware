@@ -16,6 +16,7 @@ $ npm install --save errorable-express
 
 ## Usage
 
+### Expressjs Middleware
 ```js
 var errorableExpress = require('errorable-express');
 var common = require('errorable-common');
@@ -42,16 +43,41 @@ express.get('/errorize', function errorizexx(req, res) {
 });
 
 ```
+
+### Integration with Sailsjs
+
+in config/http.js
+
+```js
+    //Create a new middleware function
+    errorable: function(req, res, next) {
+      var errorableExpress = require('errorable-express');   //the errorable middleware for express
+      var common = require('errorable-common');   //the errorable middleware for express
+      var errorable = require('errorable');	     //the errorable library
+      var Generator = errorable.Generator;	     //Get the generator
+      var errors = new Generator(common, 'zh-CN').errors;    //Generate the errors
+      var callback = errorableExpress(errors);
+      callback(req, res, next);
+    },
+    
+    //Added it to the order array
+    order: [
+    ...
+    'errorable',
+    ...
+    ]
+```
+
 ## License
 
 MIT © [calidion](blog.3gcnbeta.com)
 
 
-[npm-image]: https://badge.fury.io/js/errorable-express-middleware.svg
-[npm-url]: https://npmjs.org/package/errorable-express-middleware
-[travis-image]: https://travis-ci.org/Errorable/express-middleware.svg?branch=master
-[travis-url]: https://travis-ci.org/Errorable/express-middleware
-[daviddm-image]: https://david-dm.org/Errorable/express-middleware.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Errorable/express-middleware
-[coveralls-image]: https://coveralls.io/repos/Errorable/express-middleware/badge.svg
-[coveralls-url]: https://coveralls.io/r/Errorable/express-middleware
+[npm-image]: https://badge.fury.io/js/errorable-express.svg
+[npm-url]: https://npmjs.org/package/errorable-express
+[travis-image]: https://travis-ci.org/calidion/errorable-express.svg?branch=master
+[travis-url]: https://travis-ci.org/calidion/errorable-express
+[daviddm-image]: https://david-dm.org/calidion/errorable-express.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/calidion/errorable-express
+[coveralls-image]: https://coveralls.io/repos/calidion/errorable-express/badge.svg
+[coveralls-url]: https://coveralls.io/r/calidion/errorable-express
